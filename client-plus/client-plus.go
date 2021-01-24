@@ -45,6 +45,8 @@ func main() {
 			InsecureSkipVerify: true,
 		}
 		fmt.Println("Running without verification of the tls server - this is dangerous")
+	}else {
+		tlsConfig = &tls.Config {}
 	}
 
 	// connect quic-socks server
