@@ -15,4 +15,4 @@ compiler linux arm
 compiler windows amd64
 compiler windows 386
 compiler darwin amd64
-compiler darwin 386
+#compiler darwin 386 #unsupported GOOS/GOARCH pair darwin/386
