@@ -53,7 +53,7 @@ func (c *Client) Dial() (net.Conn, error) {
 	}()
 	quicCfg := quic.Config{
 		HandshakeTimeout: 30 * time.Second,
-		IdleTimeout:      10 * time.Minute,
+		MaxIdleTimeout:      10 * time.Minute,
 		KeepAlive:        true,
 	}
 	session, err := quic.Dial(udpConn, rAddr, c.address, c.tlsConfig, &quicCfg)

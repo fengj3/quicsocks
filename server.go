@@ -35,7 +35,7 @@ func NewServer(address string, password []byte, tlsConfig *tls.Config) (*Server,
 	}
 	quicCfg := quic.Config{
 		HandshakeTimeout: 30 * time.Second,
-		IdleTimeout:      10 * time.Minute,
+		MaxIdleTimeout:      10 * time.Minute,
 		KeepAlive:        true,
 	}
 	quicListener, err := quic.Listen(conn, tlsConfig, &quicCfg)

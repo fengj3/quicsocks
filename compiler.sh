@@ -1,6 +1,6 @@
 #!/bin/bash
 compiler() {
-  if [[ $2 == "windows" || $2 == "darwin" ]];then
+  if [ "$1" == "windows" -o "$1" == "darwin" ];then
     suffix=".exe";
   else
     suffix="";
