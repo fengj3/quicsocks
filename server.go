@@ -1,6 +1,7 @@
 package socks
 
 import (
+	//"context"
 	"crypto/sha256"
 	"crypto/subtle"
 	"crypto/tls"

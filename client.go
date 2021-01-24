@@ -1,6 +1,7 @@
 package socks
 
 import (
+	"context"
 	"bytes"
 	"crypto/sha256"
 	"crypto/tls"
@@ -65,7 +66,7 @@ func (c *Client) Dial() (net.Conn, error) {
 			_ = session.CloseWithError(0, "no error")
 		}
 	}()
-	stream, err := session.OpenStreamSync()
+	stream, err := session.OpenStreamSync(context.Background())
 	if err != nil {
 		return nil, err
 	}

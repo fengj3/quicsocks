@@ -1,6 +1,7 @@
 package socks
 
 import (
+	"context"
 	"errors"
 	"net"
 	"sync"
@@ -37,7 +38,7 @@ type Conn struct {
 func (c *Conn) acceptStream() error {
 	c.acceptOnce.Do(func() {
 		if c.stream == nil {
-			c.stream, c.acceptErr = c.session.AcceptStream()
+			c.stream, c.acceptErr = c.session.AcceptStream(context.Background())
 			if c.acceptErr != nil {
 				return
 			}
@@ -130,7 +131,7 @@ type listener struct {
 }
 
 func (l *listener) Accept() (net.Conn, error) {
-	session, err := l.Listener.Accept()
+	session, err := l.Listener.Accept(context.Background())
 	if err != nil {
 		return nil, err
 	}
