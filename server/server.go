@@ -9,7 +9,7 @@ import (
 	"os"
 	"os/signal"
 
-	"github.com/For-ACGN/quic-socks"
+	"github.com/fengj3/quicsocks"
 )
 
 func main() {

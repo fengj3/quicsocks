@@ -1,6 +1,6 @@
-module github.com/For-ACGN/quic-socks
+module github.com/fengj3/quicsocks
 
-go 1.14
+go 1.15
 
 require (
 	github.com/lucas-clemente/quic-go v0.7.1-0.20190825070216-f1d14ecdeafb
