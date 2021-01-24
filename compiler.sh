@@ -7,6 +7,7 @@ compiler() {
   fi
   CGO_ENABLED=0 GOOS=$1 GOARCH=$2 go build -o bin/quicsocks-server-${1}-${2}${suffix} server/server.go
   CGO_ENABLED=0 GOOS=$1 GOARCH=$2 go build -o bin/quicsocks-client-${1}-${2}${suffix} client/client.go
+  CGO_ENABLED=0 GOOS=$1 GOARCH=$2 go build -o bin/quicsocks-client-plus-${1}-${2}${suffix} client-plus/client-plus.go
 }
 compiler linux amd64
 compiler linux 386
