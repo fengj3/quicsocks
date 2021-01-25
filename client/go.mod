@@ -3,7 +3,7 @@ module client
 go 1.15
 
 require (
-	github.com/fengj3/quicsocks v1.0.3-0.20210125043013-88a202856f4f // indirect
+	github.com/fengj3/quicsocks v1.0.4-0.20210125053152-1af7eca81c88 // indirect
 	github.com/golang/protobuf v1.4.3 // indirect
 	github.com/lucas-clemente/quic-go v0.19.3 // indirect
 	github.com/pkg/errors v0.9.1 // indirect

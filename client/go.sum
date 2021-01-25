@@ -26,6 +26,8 @@ github.com/fengj3/quicsocks v1.0.1-0.20210124073121-d74e0105367e h1:hn1c7UoJJciB
 github.com/fengj3/quicsocks v1.0.1-0.20210124073121-d74e0105367e/go.mod h1:E0DjZ9BOqVpm2v8lx3mRKZKIykswbcBs641kjp2sTSw=
 github.com/fengj3/quicsocks v1.0.3-0.20210125043013-88a202856f4f h1:VvAbHTg6tMoa1kG25ZYuc23oRieQxkD4dXLQXMpJLKc=
 github.com/fengj3/quicsocks v1.0.3-0.20210125043013-88a202856f4f/go.mod h1:E0DjZ9BOqVpm2v8lx3mRKZKIykswbcBs641kjp2sTSw=
+github.com/fengj3/quicsocks v1.0.4-0.20210125053152-1af7eca81c88 h1:1sYgnmUaabjT7IBif0tDnvwifbqgbRu5Ov7NzE4V9sA=
+github.com/fengj3/quicsocks v1.0.4-0.20210125053152-1af7eca81c88/go.mod h1:E0DjZ9BOqVpm2v8lx3mRKZKIykswbcBs641kjp2sTSw=
 github.com/flynn/go-shlex v0.0.0-20150515145356-3f9db97f8568/go.mod h1:xEzjJPgXI435gkrCt3MPfRiAkVrwSbHsst4LCFVfpJc=
 github.com/francoispqt/gojay v1.2.13/go.mod h1:ehT5mTG4ua4581f1++1WLG0vPdaA9HaiDsoyrBGkyDY=
 github.com/fsnotify/fsnotify v1.4.7/go.mod h1:jwhsz4b93w/PPRr/qN1Yymfu8t87LnFCMoQvtojpjFo=
