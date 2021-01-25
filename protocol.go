@@ -9,7 +9,7 @@ import (
 	"github.com/pkg/errors"
 )
 
-const nextProto = "h3-27"
+const nextProto = "h3-32"
 
 // client connect
 // type can be 0x00(IPv4), 0x01(IPv6), 0x02(FQDN)
