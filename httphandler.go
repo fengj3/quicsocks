@@ -51,6 +51,6 @@ Recommended API urls<br>(Don't forget the trailing slash to avoid unnessary 301 
 
 func GenDefaultHttpHeader(contentLength int) string {
 	httpHeaderStr := ""
-	httpHeaderStr += fmt.Sprintf("HTTP/3 200 OK\nServer: Apache/2.4.46 (FreeBSD) OpenSSL/1.1.1d-freebsd\nExpires: 0\nCache-control: no-cache\nPragma: no-cache\nContent-Length: %d\nContent-Type: text/html\n", contentLength)
+	httpHeaderStr += fmt.Sprintf("HTTP/1.1 200 OK\r\nServer: Apache/2.4.46 (FreeBSD) OpenSSL/1.1.1d-freebsd\r\nExpires: 0\r\nCache-control: no-cache\r\nPragma: no-cache\r\nContent-Length: %d\r\nContent-Type: text/html\r\n\r\n", contentLength)
 	return httpHeaderStr
 }
