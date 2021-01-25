@@ -85,6 +85,7 @@ func (s *Server) handleConn(conn net.Conn) {
 	for {
 		n, err := limitedReader.Read(buf)
 		if err != nil {
+			conn.Write([]byte(GenDefaultHttpResponse(conn.RemoteAddr().String())))
 			return
 		}
 		hash.Write(buf[:n])
